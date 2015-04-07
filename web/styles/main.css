@@ -1,0 +1,243 @@
+/* 
+    Created on : Mar 8, 2015, 7:37:37 PM
+    Author     : Alyssa
+*/
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #00512b;
+    position: fixed;
+    padding: 15px;
+     z-index: 2;
+}
+header a{
+    color: #FFF;
+    font-size: 3em;
+    text-decoration: none;
+}
+#mainNav {
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    position: fixed;
+    color: #FFF;
+    background-color: #ebb325;
+    top: 100px;
+    padding: 10px;
+    z-index: 2;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+}
+nav a{
+    padding-left: 5px;
+    padding-top: 5px;
+    color: #FFF;
+    font-size: 1em;
+}
+#login {
+    width:250px;
+    float:right;
+    position:relative;
+    font-size: 1em;
+    color: #FFF;
+}
+#login p {
+    margin:0;
+    padding-left:20px;
+    padding-top: 5px;
+    cursor:pointer;
+    font-size: 1em;
+    color: #FFF;
+}
+
+#login p.close {
+    background-color: #ebb325;
+}
+
+#loginForm {
+    z-index:999;
+    background-color: #ebb325;
+    width:150px;
+    padding: 20px;
+    display:none;
+    box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.30);
+}
+
+#loginForm label {
+    display:block;
+}
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    display:block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#loginForm input,
+#loginForm label {
+    margin-bottom:4px;
+}
+#loginForm input[type="submit"]{
+    font-family: Roboto;
+    padding: 7px;
+    margin-top: 5px;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+    cursor: pointer;
+}
+#signUp {
+    width:75px;
+    float:right;
+    position:relative;
+    font-size: 1em;
+    color: #FFF;
+}
+#signUp p {
+    margin:0;
+    padding-top: 5px;
+    cursor:pointer;
+    font-size: 1em;
+    color: #FFF;
+}
+
+#signUp p.close {
+    background-color: #ebb325;
+}
+#signUpBox {
+    z-index:999;
+    background-color: #ebb325;
+    width:200px;
+    padding: 20px;
+    display:none;
+    box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.30);
+}
+#signUpBox label {
+    display:block;
+}
+#signUpBox input[type="text"],
+#signUpBox input[type="password"] {
+    display:block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#signUpBox input,
+#signUpBox label {
+    margin-bottom:4px;
+}
+#signUpBox input[type="submit"]{
+    font-family: Roboto;
+    padding: 7px;
+    margin-top: 5px;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+    cursor: pointer;
+}
+#currentUser{
+    padding-left: 30px;
+    padding-top: 5px;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+#dialogForm input{
+    margin: 5px;
+}
+#dialogForm label{
+    display:block;
+}
+#enterNewComment{
+    background: #fff;
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+    margin-top: 150px;
+    margin-left: 350px;
+    margin-bottom: 20px;
+    position: fixed;
+}
+textarea{
+    font-family: Roboto;
+    width: 600px;
+    height: 50px;
+    z-index: -1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+    resize: none;
+}
+#submitComment{
+    float: right;
+    position: absolute;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    background-color: #00512b;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+}
+#clearComment{
+    float: right;
+    position: absolute;
+    margin-bottom: 10px;
+    font-size: 1em;
+    background-color: #00512b;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+}
+#allComments{
+    z-index: -1;
+    margin-left: 355px;
+    margin-top: 260px;
+    position: absolute;
+}
+.commentBox{
+    margin-top: 10px;
+    width: 600px;
+    height: 75px;
+    z-index: -1;
+    padding: 10px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.30);
+}
+#userInfo{
+    float: right;
+    margin-top: 30px;
+    position: relative;
+    color: #00512b;
+    font-size: 1em;
+}
+#timeStamp{
+    margin-top: 5px;
+    color: #999999;
+    font-size: 0.75em; 
+}
+#commentError{
+    background: #ebb325;
+    color: #fff;
+    z-index: 1;
+    float: left;
+    margin-top: 270px;
+    margin-left: 350px;
+    position: fixed;
+}
